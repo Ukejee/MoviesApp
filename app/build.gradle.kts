@@ -84,6 +84,9 @@ dependencies {
     kapt("androidx.room:room-compiler:$room_version")
     implementation(libs.androidx.room.ktx)
 
+    //    instrumentation test
+    androidTestImplementation(libs.androidx.core.testing)
+
 
 
 

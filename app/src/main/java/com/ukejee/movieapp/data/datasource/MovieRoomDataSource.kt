@@ -2,7 +2,6 @@ package com.ukejee.movieapp.data.datasource
 
 import com.ukejee.movieapp.data.cache.AppDatabase
 import com.ukejee.movieapp.data.cache.model.PersistedMovie
-import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 class MovieRoomDataSource @Inject constructor(

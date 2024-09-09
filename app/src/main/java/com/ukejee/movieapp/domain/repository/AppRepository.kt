@@ -1,6 +1,5 @@
 package com.ukejee.movieapp.domain.repository
 
-import android.util.Log
 import com.ukejee.movieapp.data.DataSource
 import com.ukejee.movieapp.data.cache.model.PersistedMovie
 import com.ukejee.movieapp.data.datasource.MovieLocalDataSource
@@ -9,7 +8,6 @@ import com.ukejee.movieapp.domain.model.Movie
 import com.ukejee.movieapp.ui.movies.model.UIMovie
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.map
 import java.io.IOException
 import javax.inject.Inject
 
@@ -47,13 +45,7 @@ class AppRepository @Inject constructor(
                     emit(DataSource.success(movies.map { it.toDomain() }))
                 }
             } catch (e: Exception) {
-                Log.d("DB", "${e.message}")
-                if(e is IOException) {
-                    emit(DataSource.error("No Internet Connection", null))
-                } else {
-                    Log.d("DB", "${e.message}")
-                    emit(DataSource.error("Something went wrong...", null))
-                }
+                emit(DataSource.error("Something went wrong...", null))
             }
         }
     }
