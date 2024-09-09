@@ -87,8 +87,14 @@ dependencies {
     //    instrumentation test
     androidTestImplementation(libs.androidx.core.testing)
 
+
+    testImplementation(libs.androidx.core.testing)
+    testImplementation(libs.kotlinx.coroutines.test)
+
     testImplementation(libs.mockwebserver)
     androidTestImplementation(libs.mockwebserver)
+    androidTestImplementation(libs.mockk.android)
+    testImplementation(libs.mockito.core)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

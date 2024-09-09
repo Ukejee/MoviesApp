@@ -1,4 +1,4 @@
-package com.ukejee.movieapp.ui.movies
+package com.ukejee.movieapp.ui.movies.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -25,6 +25,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
+import com.ukejee.movieapp.ui.movies.viewmodels.MoviesViewModel
 import com.ukejee.movieapp.ui.movies.model.UIMovie
 import com.ukejee.movieapp.ui.theme.MovieAppTheme
 

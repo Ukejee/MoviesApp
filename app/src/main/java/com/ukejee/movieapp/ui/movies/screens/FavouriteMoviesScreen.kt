@@ -1,4 +1,4 @@
-package com.ukejee.movieapp.ui.screens
+package com.ukejee.movieapp.ui.movies.screens
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -10,12 +10,10 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.ukejee.movieapp.data.Status
-import com.ukejee.movieapp.ui.movies.Message
-import com.ukejee.movieapp.ui.movies.MovieListItem
-import com.ukejee.movieapp.ui.movies.MoviesViewModel
+import com.ukejee.movieapp.ui.movies.viewmodels.MoviesViewModel
 
 @Composable
-fun FavouritesScreen(viewModel: MoviesViewModel, onClick: () -> Unit) {
+fun FavouriteMoviesScreen(viewModel: MoviesViewModel, onClick: () -> Unit) {
     viewModel.getFavouritesMovies()
     val favouriteMovies = viewModel.favouriteMovies.collectAsState().value
 

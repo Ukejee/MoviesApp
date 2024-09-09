@@ -1,4 +1,4 @@
-package com.ukejee.movieapp.ui.movies
+package com.ukejee.movieapp.ui.movies.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

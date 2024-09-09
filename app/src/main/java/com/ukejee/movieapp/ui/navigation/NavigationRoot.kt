@@ -10,10 +10,10 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.ukejee.movieapp.ui.movies.MovieDetailsScreen
-import com.ukejee.movieapp.ui.screens.FavouritesScreen
-import com.ukejee.movieapp.ui.movies.MoviesScreen
-import com.ukejee.movieapp.ui.movies.MoviesViewModel
+import com.ukejee.movieapp.ui.movies.screens.MovieDetailsScreen
+import com.ukejee.movieapp.ui.movies.screens.FavouriteMoviesScreen
+import com.ukejee.movieapp.ui.movies.screens.MoviesScreen
+import com.ukejee.movieapp.ui.movies.viewmodels.MoviesViewModel
 
 @Composable
 fun RootNavigationGraph(viewModel: MoviesViewModel, navController: NavHostController, modifier: Modifier) {
@@ -34,7 +34,7 @@ fun RootNavigationGraph(viewModel: MoviesViewModel, navController: NavHostContro
             }
         }
         composable(Screen.Favourites.route) {
-            FavouritesScreen(viewModel) {
+            FavouriteMoviesScreen(viewModel) {
                 navController.navigate(Screen.Details.route) {
                     launchSingleTop = true
                     restoreState = true

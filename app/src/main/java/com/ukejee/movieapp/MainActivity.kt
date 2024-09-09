@@ -22,7 +22,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.compose.rememberNavController
-import com.ukejee.movieapp.ui.movies.MoviesViewModel
+import com.ukejee.movieapp.ui.movies.viewmodels.MoviesViewModel
 import com.ukejee.movieapp.ui.navigation.BottomNavigationBar
 import com.ukejee.movieapp.ui.navigation.RootNavigationGraph
 import com.ukejee.movieapp.ui.theme.MovieAppTheme
