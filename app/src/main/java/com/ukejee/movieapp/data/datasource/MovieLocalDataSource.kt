@@ -1,7 +1,6 @@
 package com.ukejee.movieapp.data.datasource
 
 import com.ukejee.movieapp.data.cache.model.PersistedMovie
-import kotlinx.coroutines.flow.Flow
 
 interface MovieLocalDataSource {
 

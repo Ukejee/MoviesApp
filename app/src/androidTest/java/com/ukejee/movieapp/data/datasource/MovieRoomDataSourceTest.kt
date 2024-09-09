@@ -44,7 +44,7 @@ class MovieRoomDataSourceTest {
 
     @Test
     @Throws(Exception::class)
-    fun fromPlanetRoomDataSource_inputOneEntry_returnsSameEntry() = runBlocking {
+    fun fromMovieRoomDataSource_inputOneEntry_returnsSameEntry() = runBlocking {
         val movie = PersistedMovie(
             title = "title",
             description = "descrription",
