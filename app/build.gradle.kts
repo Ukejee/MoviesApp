@@ -87,8 +87,8 @@ dependencies {
     //    instrumentation test
     androidTestImplementation(libs.androidx.core.testing)
 
-
-
+    testImplementation(libs.mockwebserver)
+    androidTestImplementation(libs.mockwebserver)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
